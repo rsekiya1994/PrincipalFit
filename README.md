@@ -54,14 +54,14 @@ Then, draw some 2D histogram. Like
 ```
 root[1] tree->Draw("var1:var2>>h1(100, -1, 1, 200, -5, 5)", "", "colz")
 ```
-To fit this histogram named "h2", do
+To fit this histogram, do
 ```
-root[2] pca_fit("h2", -0.5, 0.5, 2, 2)
+root[2] pca_fit("h1", -0.5, 0.5, 2, 2)
 ```
-The 2D histogram should be fitted by 2 linear functions. The argument meanings are
+The 2D histogram should be fitted by 2 linear functions. Since the name of the histogram is "h1" in above example, the first argument should be "h1". The argument meanings are
 ```c++
 pca_fit(const char* histname, minX, maxX, minY, maxY)
 ```
 
-You should select the fit region by the arguments  `minX, maxX, minY, maxY`.
+You should select the fit region by the arguments  `minX`, `maxX`, `minY`, `maxY`.
 

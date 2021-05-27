@@ -3,21 +3,21 @@
 
 With this library, you can fit 2D histograom with a linear function. This fit method is based on principal component analysis.
 
----
+
 ## Requirement
 - ROOT 6
-- Eigen3
+- Eigen 3
 
----
+
 ## How to Build
 
-Most probably, you already installed ROOT6. So, here we start from introducing how to install Eigen3.
+Most probably, you already installed ROOT 6. So, here we start from introducing how to install Eigen 3.
 
 At first, do git clone wherever you want to install.
 ```
 $ git clone https://gitlab.com/libeigen/eigen.git
 ```
-And after going to directory of Eigen, you should command
+And after going to directory of Eigen, you should do commands
 ```
 $ mkdir build
 $ cd build
@@ -27,7 +27,7 @@ $ make install
 ```
 You can specify install directory by `${PATH_TO_INSTALL_DIR}`. When this is omitted, install directory is usually `/usr/local/include`.
 
-After installing Eigen3, go to directory of this library `PrincipalFit`. Do commands
+After installing Eigen 3, go to directory of this library `PrincipalFit`. Do commands
 
 ```
 $ mkdir build
@@ -40,7 +40,7 @@ Then, do
 ```
 $ make
 ```
----
+
 ## How to Use
 
 Start ROOT at first and do command,
@@ -54,14 +54,14 @@ Then, draw some 2D histogram. Like
 ```
 root[1] tree->Draw("var1:var2>>h1(100, -1, 1, 200, -5, 5)", "", "colz")
 ```
-To fit this histogram named "h2", do
+To fit this histogram, do
 ```
-root[2] pca_fit("h2", -0.5, 0.5, 2, 2)
+root[2] pca_fit("h1", -0.5, 0.5, 2, 2)
 ```
-The 2D histogram should be fitted by 2 linear functions. The argument meanings are
+The 2D histogram should be fitted by 2 linear functions. Since the name of the histogram is "h1" in above example, the first argument should be "h1". The argument meanings are
 ```c++
 pca_fit(const char* histname, minX, maxX, minY, maxY)
 ```
 
-You should select the fit region by the arguments  `minX, maxX, minY, maxY`.
+You should select the fit region by the arguments  `minX`, `maxX`, `minY`, `maxY`.
 

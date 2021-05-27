@@ -3,21 +3,21 @@
 
 With this library, you can fit 2D histograom with a linear function. This fit method is based on principal component analysis.
 
----
+
 ## Requirement
 - ROOT 6
-- Eigen3
+- Eigen 3
 
----
+
 ## How to Build
 
-Most probably, you already installed ROOT6. So, here we start from introducing how to install Eigen3.
+Most probably, you already installed ROOT 6. So, here we start from introducing how to install Eigen 3.
 
 At first, do git clone wherever you want to install.
 ```
 $ git clone https://gitlab.com/libeigen/eigen.git
 ```
-And after going to directory of Eigen, you should command
+And after going to directory of Eigen, you should do commands
 ```
 $ mkdir build
 $ cd build
@@ -27,7 +27,7 @@ $ make install
 ```
 You can specify install directory by `${PATH_TO_INSTALL_DIR}`. When this is omitted, install directory is usually `/usr/local/include`.
 
-After installing Eigen3, go to directory of this library `PrincipalFit`. Do commands
+After installing Eigen 3, go to directory of this library `PrincipalFit`. Do commands
 
 ```
 $ mkdir build
@@ -40,7 +40,7 @@ Then, do
 ```
 $ make
 ```
----
+
 ## How to Use
 
 Start ROOT at first and do command,

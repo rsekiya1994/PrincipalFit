@@ -43,7 +43,7 @@ $ make
 
 ## How to Use
 
-Start ROOT at first and do command,
+Start ROOT at first and type command,
 ```
 root[0] .x ${PrincipleFit_DIR}/macro/load.C
 (int) 0

@@ -17,7 +17,7 @@ At first, do git clone wherever you want to install.
 ```
 $ git clone https://gitlab.com/libeigen/eigen.git
 ```
-And after going to directory of Eigen, you should do commands
+And after going to directory of Eigen, type following commands.
 ```
 $ mkdir build
 $ cd build
@@ -27,7 +27,7 @@ $ make install
 ```
 You can specify install directory by `${PATH_TO_INSTALL_DIR}`. When this is omitted, install directory is usually `/usr/local/include`.
 
-After installing Eigen 3, go to directory of this library `PrincipalFit`. Do commands
+After installing Eigen 3, go to directory of this library `PrincipalFit`. And then,
 
 ```
 $ mkdir build
@@ -36,7 +36,7 @@ $ cmake -DEIGEN_DIR=${EIGEN_INCLUDE_DIR}/eigen3 ..
 ```
 Please specify the path to include directory of Eigen3 by ${EIGEN_INCLUDE_DIR}. (In case you install Eigen3 at `/usr/local/include/`, cmake would automatically search for install directory of Eigen3.)
 
-Then, do
+Then, type
 ```
 $ make
 ```
@@ -54,7 +54,7 @@ Then, draw some 2D histogram. Like
 ```
 root[1] tree->Draw("var1:var2>>h1(100, -1, 1, 200, -5, 5)", "", "colz")
 ```
-To fit this histogram, do
+To fit this histogram,
 ```
 root[2] pca_fit("h1", -0.5, 0.5, 2, 2)
 ```

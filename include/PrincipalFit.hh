@@ -22,7 +22,7 @@ public:
     void Execution();
     void Draw(int ifunc = 0, const char* option = "same");
     void ShowParameter();
-private:
+protected:
     bool isSet = false;
     std::vector<double> dataX;
     std::vector<double> dataY;

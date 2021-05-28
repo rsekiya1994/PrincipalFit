@@ -7,7 +7,7 @@ With this library, you can fit 2D histograom with a linear function. This fit me
 ## Requirement
 - ROOT 6
 - Eigen 3
-
+- C++ 11
 
 ## How to Build
 
